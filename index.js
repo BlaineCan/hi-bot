@@ -14,8 +14,8 @@ client.on("ready", () =>{
 
 client.on("message", message => {
   if(message.author.bot) return;
-  if(message.channel.id !== config.chan) return;
-  if(message.content.includes(" hi ") || message.content.includes(" Hi ")){
+  if(message.channel.id !== config.chan.hi) return;
+  if(message.content.includes("hi ") || message.content.includes("Hi ") || message.content.includes("hi!") || message.content.includes("Hi!") || message.content.includes("hi.") || message.content.includes("Hi.") || message.content.length < 3){
     return;
   } else {
     console.log(`${message.author.tag} said ${message.content}. This is not allowed.`)
