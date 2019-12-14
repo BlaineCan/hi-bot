@@ -15,22 +15,15 @@ var (
 	BotID string
 )
 
-
 func main(){
-	dg, err := discordgo.New("Bot " + token)
+
+	discord, err := discordgo.New("Bot " + token)
 	if err != nil {
 		fmt.Println(err.Error())
 		return 
 	}
 	
-	u, err := dg.User("@me")
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-	
-	BotID = u.ID
-	
-	err = dg.Open()
+	err = discord.Open()
 	if err != nil {
 		fmt.Println(err.Error())
 	}
@@ -40,5 +33,7 @@ func main(){
 	<-make(chan struct{})
 	return 
 }
+
+
 
 
