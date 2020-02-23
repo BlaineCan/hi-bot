@@ -4,9 +4,9 @@ Providing discord users an ice breaker since 2019.
 
 This little bot aims to achieve: 
 
-	- Encourage users to greet existing and new members of the server. 
-	- Start a conversation when you can't find the words to say. 
-	- Remove the generic Hey's and Hi's. 
+- Encourage users to greet existing and new members of the server. 
+- Start a conversation when you can't find the words to say. 
+- Remove the generic Hey's and Hi's. 
 
 ## Issue
 
